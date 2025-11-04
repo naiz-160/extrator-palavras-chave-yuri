@@ -47,5 +47,12 @@ function contaFrequencias(palavras) {
 
 function tiraPalavrasRuins(palavras);{
     const PALAVRAS_RUINS = new Set(["para", "nós", "das", "como", "que"]);
-    
+    const palavrasBoas = [];
+
+    for (let palavras of palavras){
+        if (!PALAVRAS_RUINS.has(palavras)&& palavras.length > 2){
+
+        }
+    }
+    return palavrasBoas;
 }
