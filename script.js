@@ -1,4 +1,4 @@
-import {PALAVRAS_RUINS} from"./palavrasRuins.js";
+import { PALAVRAS_RUINS } from "./palavrasRuins.js";
 
 const botaoMostraPalavras = document.querySelector("#botao-palavrachave");
 
@@ -15,8 +15,8 @@ function mostraPalavrasChave() {
 function processaTexto(texto) {
     let palavras = texto.split(/\P{L}+/u);
 
-    for (let i in palavras){
-        palavras[i]=palavras[i].toLowerCase();
+    for (let i in palavras) {
+        palavras[i] = palavras[i].toLowerCase();
     }
     palavras = tiraPalavrasRuins(palavras);
 
@@ -43,16 +43,16 @@ function contaFrequencias(palavras) {
         }
     }
 
-    return frequencia;
+    return frequencias;
 
 }
 
-function tiraPalavrasRuins (palavras);{
-    
+function tiraPalavrasRuins(palavras) {
+
     const palavrasBoas = [];
 
-    for (let palavras of palavras){
-        if (!PALAVRAS_RUINS.has(palavras)&& palavras.length > 2){
+    for (let palavras of palavras) {
+        if (!PALAVRAS_RUINS.has(palavras) && palavras.length > 2) {
 
         }
     }
